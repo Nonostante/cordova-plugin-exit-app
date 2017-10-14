@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-exit-app",
+  "version": "0.0.1",
+  "description": "Provide ability to exit from a cordova app",
+  "cordova": {
+    "id": "cordova-plugin-exit-app",
+    "platforms": [
+      "osx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nonostante/cordova-plugin-exit-app.git"
+  },
+  "keywords": [
+    "cordova",
+	  "exit",
+    "terminate",
+    "ecosystem:cordova",
+    "cordova-osx"
+  ],
+  "author": "Nonostante Games",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Nonostante/cordova-plugin-exit-app/issues"
+  },
+  "homepage": "https://github.com/Nonostante/cordova-plugin-exit-app#readme"
+}

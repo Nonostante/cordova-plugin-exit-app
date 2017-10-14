@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="cordova-plugin-exit-app"
+  version="0.0.1">
+
+  <name>ExitApp</name>
+  <description>Provide ability to exit from a cordova app</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,exit,terminate</keywords>
+
+  <js-module src="www/exitApp.js" name="exitApp">
+    <merges target="navigator.app" />
+  </js-module>
+
+  <!-- osx -->
+  <platform name="osx">
+    <config-file target="config.xml" parent="/*">
+       <feature name="ExitApp">
+          <param name="ios-package" value="ExitApp" />
+       </feature>
+    </config-file>
+    <header-file src="src/osx/ExitApp.h" />
+    <source-file src="src/osx/ExitApp.m" />
+  </platform>
+</plugin>
